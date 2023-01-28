@@ -1,3 +1,14 @@
+/**
+*
+*
+* @author Trevor Hartman
+* @author Willard Bowles
+*
+* @since Version 1.0
+  */
+
+
+
 # Java-Lab-002
 
 ## Variables, Types and Operators
@@ -34,11 +45,38 @@ Take note of the various variables and their data types. Write a brief summary i
 Next give TWO example variable names and TWO example variable assignments that are *WRONG* and explain why.
 * Hint: your IDE can help you discover these!
 
+LAB2 Questions Willard Bowles:
+
+Variable name: %d
+Data Type: integer
+Values: Number of people or "3"
+
+
+
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize *sout* and *String.format* to view the resulting formats.
 
 ![Format Specifiers](JavaStringFormatSpecifiers.png)
+
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        int Integer = 3;
+        char M = 'M';
+        String Empty = "%d%c";
+
+        String CombinedString = String.format(Empty, Integer, M);
+
+        String StringTemplate1 = "%s Tape is the best tape!";
+
+        System.out.println(
+            String.format(StringTemplate1, CombinedString));
+    }
+}
+That's what I wrote for this part. Hopefully that's what you're looking for.
 
 ### Part 4 - Submission
 * Just as you did last week (Reference the Lab video in your Week 1 module), create a Spring2023 feature branch of your code
